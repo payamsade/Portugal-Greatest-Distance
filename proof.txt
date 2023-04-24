@@ -1,7 +1,8 @@
+
+Algorithm:
+Take all the geocoordinates along the border of the country and compare each point to another until we find the longest distance between the points. 
+Distances the fall outside of the point are deemed as faliures.
+
 Note:
-Just comparing the distances between 2 points along the border of Portugal is flawed because our distance can pass outside of the shape of Portugal. So we need some way to account for this.
-Our data might be limited in that it does not consider all points along the the bordedr. It merely considers all points sufficient to create a polygon.
-
-Original algorithm:
-Take all the geocoordinates along the border of the country and compare each point to each other point until we find the longest distance between the points. Distances the fall outside of the point are deemed as faliures
-
+- Comparing the distances between 2 points along the border of Portugal is may be flawedbecause our distance can pass outside of the shape of Portugal. So we need to account for this.
+- Our data might be limited in that it does not consider all points along the the bordedr. It merely considers all points sufficient to create a polygon.
