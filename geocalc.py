@@ -15,12 +15,13 @@ class GeoCalculator:
 
     def distances(self, data):
         distances = []
-        for i in range(len(data)):
-            a = (data[i][0], data[i][1])
-            for j in range(len(data)):
-                b = (data[j][0], data[j][1])
+        while len(data) != 0:
+            a = (data[0][0], data[0][1])
+            del data[0]
+            for i in range(len(data)):
+                b = (data[i][0], data[i][1])
                 gc_distance = distance.distance(a, b).km
-                distances.append([str(a) + "-" + str(b), gc_distance])
+                distances.append([str(a) + "⟷" + str(b), gc_distance])
         distances = self.sort_max(distances)
         return distances
 
